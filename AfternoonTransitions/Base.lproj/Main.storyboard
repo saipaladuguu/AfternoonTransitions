@@ -16,12 +16,22 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-1x-NTV">
+                                <rect key="frame" x="183" y="285" width="234" height="30"/>
+                                <state key="normal" title="Click to change the Screen wahoo"/>
+                                <connections>
+                                    <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEv-kl-n5V"/>
+                                    <segue destination="dkU-AN-ARG" kind="show" identifier="toUpdateView" id="NCO-5s-SvY"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.17131011347148206" green="1" blue="0.18975905678757854" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="194" y="8"/>
+            <point key="canvasLocation" x="88" y="17"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uIe-oz-qk8">
@@ -58,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cws-IV-dRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="8"/>
+            <point key="canvasLocation" x="939" y="17"/>
         </scene>
     </scenes>
 </document>
