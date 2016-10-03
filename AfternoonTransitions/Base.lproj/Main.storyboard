@@ -39,7 +39,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWB-1u-aRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="667" y="749"/>
+            <point key="canvasLocation" x="743" y="678"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="NYf-sz-2bR">
@@ -53,12 +53,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.14769082620000001" blue="0.83542856249999997" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="1" green="0.14769082615782536" blue="0.8354285625122031" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cws-IV-dRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1037" y="8"/>
+            <point key="canvasLocation" x="940" y="8"/>
         </scene>
     </scenes>
 </document>
