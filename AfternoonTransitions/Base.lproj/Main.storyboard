@@ -22,7 +22,7 @@
                                 <state key="normal" title="Click to change the Screen wahoo"/>
                                 <connections>
                                     <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEv-kl-n5V"/>
-                                    <segue destination="dkU-AN-ARG" kind="show" identifier="toUpdateView" id="NCO-5s-SvY"/>
+                                    <segue destination="dkU-AN-ARG" kind="show" identifier="toUpdatedView" id="NCO-5s-SvY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWB-1u-aRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743" y="678"/>
+            <point key="canvasLocation" x="631" y="758"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="NYf-sz-2bR">
@@ -62,13 +62,32 @@
                     <view key="view" contentMode="scaleToFill" id="I0Q-8D-QFo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgres" translatesAutoresizingMaskIntoConstraints="NO" id="4Ye-3T-TCt">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgres-1" translatesAutoresizingMaskIntoConstraints="NO" id="BSP-3H-skd">
+                                <rect key="frame" x="180" y="410" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M67-II-Hl2">
+                                <rect key="frame" x="100" y="556" width="207" height="30"/>
+                                <state key="normal" title="click button to change screen "/>
+                                <connections>
+                                    <segue destination="v9k-8a-IXO" kind="show" id="GMk-HG-co6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.14769082620000001" blue="0.83542856249999997" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cws-IV-dRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="17"/>
+            <point key="canvasLocation" x="965" y="17"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="imgres" width="292" height="173"/>
+        <image name="imgres-1" width="323" height="156"/>
+    </resources>
 </document>
