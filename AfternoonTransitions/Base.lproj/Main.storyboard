@@ -18,8 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-1x-NTV">
-                                <rect key="frame" x="183" y="285" width="234" height="30"/>
-                                <state key="normal" title="Click to change the Screen wahoo"/>
+                                <rect key="frame" x="0.0" y="570" width="234" height="30"/>
+                                <state key="normal" title="Click to change the Screen.">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEv-kl-n5V"/>
                                     <segue destination="dkU-AN-ARG" kind="show" identifier="toUpdatedView" id="NCO-5s-SvY"/>
@@ -44,6 +46,31 @@
                     <view key="view" contentMode="scaleToFill" id="jY2-66-ti8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W9O-8S-Gyj">
+                                <rect key="frame" x="201" y="43" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Hillcrest Tennis Team.               I have played for the last two years for Hillcrest as a JV  2 Doubles                      just love playing Tennis!  </string>
+                                        <attributes>
+                                            <font key="NSFont" size="19" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tennis 🎾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRV-iK-rd7">
+                                <rect key="frame" x="98" y="444" width="405" height="136"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                <color key="textColor" red="0.1713101135" green="1" blue="0.18975905679999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tennisTeam" translatesAutoresizingMaskIntoConstraints="NO" id="xSn-sz-g2g">
+                                <rect key="frame" x="98" y="192" width="405" height="216"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
@@ -70,8 +97,10 @@
                                 <rect key="frame" x="180" y="410" width="240" height="128"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M67-II-Hl2">
-                                <rect key="frame" x="100" y="556" width="207" height="30"/>
-                                <state key="normal" title="click button to change screen "/>
+                                <rect key="frame" x="0.0" y="570" width="207" height="30"/>
+                                <state key="normal" title="click to change Page">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="v9k-8a-IXO" kind="show" id="GMk-HG-co6"/>
                                 </connections>
@@ -89,5 +118,6 @@
     <resources>
         <image name="imgres" width="292" height="173"/>
         <image name="imgres-1" width="323" height="156"/>
+        <image name="tennisTeam" width="1354" height="903"/>
     </resources>
 </document>
