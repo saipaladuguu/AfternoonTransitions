@@ -17,14 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7h-FL-uxr">
+                                <rect key="frame" x="115" y="28" width="371" height="131"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="53"/>
+                                <state key="normal" title="About Me App">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="busphoto" translatesAutoresizingMaskIntoConstraints="NO" id="sCq-hS-Idk">
+                                <rect key="frame" x="193" y="193" width="214" height="214"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sai Neeraj Paladugu" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="Jj0-jO-TM4">
+                                <rect key="frame" x="161" y="471" width="278" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4U-1x-NTV">
-                                <rect key="frame" x="0.0" y="570" width="234" height="30"/>
+                                <rect key="frame" x="366" y="570" width="234" height="30"/>
                                 <state key="normal" title="Click to change the Screen.">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEv-kl-n5V"/>
-                                    <segue destination="dkU-AN-ARG" kind="show" identifier="toUpdatedView" id="NCO-5s-SvY"/>
+                                    <segue destination="dkU-AN-ARG" kind="show" id="jrv-gd-Zsp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,7 +48,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88" y="17"/>
+            <point key="canvasLocation" x="184" y="-383"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Nsm-Uy-9hT">
+            <objects>
+                <viewController id="5ji-vI-qBd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9g5-R1-tQV"/>
+                        <viewControllerLayoutGuide type="bottom" id="DUH-UM-dl6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fT1-nr-ROV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaA-hK-IH7">
+                                <rect key="frame" x="448" y="487" width="147" height="113"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Next Page " backgroundImage="busphoto">
+                                    <color key="titleColor" red="0.1713101135" green="1" blue="0.18975905679999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brighton" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-2r-m68">
+                                <rect key="frame" x="77" y="216" width="447" height="238"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Skiing " borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="at6-IT-weJ">
+                                <rect key="frame" x="196" y="178" width="176" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I love To Ski At Brighton. i have been skiing for about three years now. i want to explore more skii resorts this winter." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="E9o-f1-NM8">
+                                <rect key="frame" x="164" y="472" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCq-Rn-JUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184" y="1114"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uIe-oz-qk8">
@@ -47,6 +103,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tennisTeam" translatesAutoresizingMaskIntoConstraints="NO" id="xSn-sz-g2g">
+                                <rect key="frame" x="8" y="192" width="405" height="216"/>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W9O-8S-Gyj">
                                 <rect key="frame" x="201" y="43" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -62,21 +121,71 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tennis 🎾" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRV-iK-rd7">
-                                <rect key="frame" x="98" y="444" width="405" height="136"/>
+                                <rect key="frame" x="8" y="430" width="405" height="136"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                 <color key="textColor" red="0.1713101135" green="1" blue="0.18975905679999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tennisTeam" translatesAutoresizingMaskIntoConstraints="NO" id="xSn-sz-g2g">
-                                <rect key="frame" x="98" y="192" width="405" height="216"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00n-9G-ld4">
+                                <rect key="frame" x="422" y="486" width="158" height="94"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Next Page" backgroundImage="busphoto">
+                                    <color key="titleColor" red="0.1713101135" green="1" blue="0.18975905679999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ziA-kA-2WR" kind="show" id="0g5-dK-pcf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWB-1u-aRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="631" y="758"/>
+            <point key="canvasLocation" x="184" y="1884"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="80b-8n-Nl3">
+            <objects>
+                <viewController id="ziA-kA-2WR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ani-JK-4uf"/>
+                        <viewControllerLayoutGuide type="bottom" id="wKD-ve-f7z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z8X-zX-0Qz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DIGITAL MEDIA" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qwl-11-0ef">
+                                <rect key="frame" x="190" y="45" width="185" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1684484_orig" translatesAutoresizingMaskIntoConstraints="NO" id="pEr-z2-NfT">
+                                <rect key="frame" x="90" y="102" width="384" height="205"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4lD-9M-y49">
+                                <rect key="frame" x="162" y="343" width="240" height="133"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">I learned digital media at my home school. i learned to use Adobe Photoshop, adobe illustrature, adobe flash and imovie and a few other softwars i want to expand on this by taking the ctec Digital Media Class next Year.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="THE END" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jM3-oh-ZeU">
+                                <rect key="frame" x="234" y="526" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Tem-YN-bsB"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.71464839338897579" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LzH-8b-tq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="184" y="2595"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="NYf-sz-2bR">
@@ -90,19 +199,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgres" translatesAutoresizingMaskIntoConstraints="NO" id="4Ye-3T-TCt">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="I Play On the XboxOne. I Really Like FreeRoam Games." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zs4-ey-C88">
+                                <rect key="frame" x="231" y="316" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="maxresdefault" translatesAutoresizingMaskIntoConstraints="NO" id="cUC-tA-9VI">
+                                <rect key="frame" x="146" y="56" width="410" height="210"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgres-1" translatesAutoresizingMaskIntoConstraints="NO" id="BSP-3H-skd">
-                                <rect key="frame" x="180" y="410" width="240" height="128"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M67-II-Hl2">
-                                <rect key="frame" x="0.0" y="570" width="207" height="30"/>
-                                <state key="normal" title="click to change Page">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8y-2Y-c9H">
+                                <rect key="frame" x="20" y="491" width="191" height="109"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Next Page" backgroundImage="busphoto">
+                                    <color key="titleColor" red="0.1713101135" green="1" blue="0.18975905679999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="v9k-8a-IXO" kind="show" id="GMk-HG-co6"/>
+                                    <segue destination="5ji-vI-qBd" kind="show" id="O0X-rG-0Qa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -112,12 +225,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cws-IV-dRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="17"/>
+            <point key="canvasLocation" x="184" y="377"/>
         </scene>
     </scenes>
     <resources>
-        <image name="imgres" width="292" height="173"/>
-        <image name="imgres-1" width="323" height="156"/>
+        <image name="1684484_orig" width="900" height="597"/>
+        <image name="Brighton" width="520" height="344"/>
+        <image name="busphoto" width="1288" height="859"/>
+        <image name="maxresdefault" width="1280" height="720"/>
         <image name="tennisTeam" width="1354" height="903"/>
     </resources>
 </document>
