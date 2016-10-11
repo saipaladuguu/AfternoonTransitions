@@ -48,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="-383"/>
+            <point key="canvasLocation" x="360" y="-623"/>
         </scene>
         <!--Ski View Controller-->
         <scene sceneID="Nsm-Uy-9hT">
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCq-Rn-JUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-440" y="1088"/>
+            <point key="canvasLocation" x="360" y="910"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uIe-oz-qk8">
@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWB-1u-aRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="887" y="1334"/>
+            <point key="canvasLocation" x="360" y="1674"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="80b-8n-Nl3">
@@ -172,24 +172,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="THE END" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jM3-oh-ZeU">
-                                <rect key="frame" x="234" y="526" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" identifier="UIViewController.h" id="Tem-YN-bsB"/>
-                                </connections>
-                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1684484_orig" translatesAutoresizingMaskIntoConstraints="NO" id="pEr-z2-NfT">
                                 <rect key="frame" x="108" y="113" width="384" height="205"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Now-pZ-Lke">
+                                <rect key="frame" x="240" y="529" width="64" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.089329843570200906" blue="0.038101470183112718" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="THE END"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Rh8-p8-04w"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.71464839338897579" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzH-8b-tq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="220" y="2369"/>
+            <point key="canvasLocation" x="360" y="2499"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="NYf-sz-2bR">
@@ -229,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cws-IV-dRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="413"/>
+            <point key="canvasLocation" x="360" y="153"/>
         </scene>
     </scenes>
     <resources>
