@@ -39,7 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="changeScreens:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEv-kl-n5V"/>
-                                    <segue destination="dkU-AN-ARG" kind="show" id="jrv-gd-Zsp"/>
+                                    <segue destination="dkU-AN-ARG" kind="show" identifier="toUpdatedView" id="jrv-gd-Zsp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,10 +50,10 @@
             </objects>
             <point key="canvasLocation" x="184" y="-383"/>
         </scene>
-        <!--View Controller-->
+        <!--Ski View Controller-->
         <scene sceneID="Nsm-Uy-9hT">
             <objects>
-                <viewController id="5ji-vI-qBd" sceneMemberID="viewController">
+                <viewController id="5ji-vI-qBd" customClass="SkiViewController" customModule="AfternoonTransitions" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9g5-R1-tQV"/>
                         <viewControllerLayoutGuide type="bottom" id="DUH-UM-dl6"/>
@@ -68,10 +68,11 @@
                                 <state key="normal" title="Next Page " backgroundImage="busphoto">
                                     <color key="titleColor" red="0.1713101135" green="1" blue="0.18975905679999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="tennis:" destination="5ji-vI-qBd" eventType="touchUpInside" id="ozk-AA-cYV"/>
+                                    <segue destination="v9k-8a-IXO" kind="show" identifier="toTennis" id="SWU-Q4-ikW"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brighton" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-2r-m68">
-                                <rect key="frame" x="77" y="216" width="447" height="238"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Skiing " borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="at6-IT-weJ">
                                 <rect key="frame" x="196" y="178" width="176" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
@@ -83,13 +84,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Brighton" translatesAutoresizingMaskIntoConstraints="NO" id="a3N-2r-m68">
+                                <rect key="frame" x="96" y="209" width="447" height="238"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCq-Rn-JUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="1114"/>
+            <point key="canvasLocation" x="-440" y="1088"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="uIe-oz-qk8">
@@ -133,7 +137,7 @@
                                     <color key="titleColor" red="0.1713101135" green="1" blue="0.18975905679999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ziA-kA-2WR" kind="show" id="0g5-dK-pcf"/>
+                                    <segue destination="ziA-kA-2WR" kind="show" identifier="UIView" id="0g5-dK-pcf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -142,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZWB-1u-aRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="1884"/>
+            <point key="canvasLocation" x="887" y="1334"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="80b-8n-Nl3">
@@ -161,9 +165,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1684484_orig" translatesAutoresizingMaskIntoConstraints="NO" id="pEr-z2-NfT">
-                                <rect key="frame" x="90" y="102" width="384" height="205"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4lD-9M-y49">
                                 <rect key="frame" x="162" y="343" width="240" height="133"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -176,16 +177,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Tem-YN-bsB"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="UIViewController.h" id="Tem-YN-bsB"/>
                                 </connections>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1684484_orig" translatesAutoresizingMaskIntoConstraints="NO" id="pEr-z2-NfT">
+                                <rect key="frame" x="90" y="52" width="384" height="205"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.71464839338897579" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LzH-8b-tq8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="2595"/>
+            <point key="canvasLocation" x="220" y="2369"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="NYf-sz-2bR">
@@ -215,7 +219,7 @@
                                     <color key="titleColor" red="0.1713101135" green="1" blue="0.18975905679999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5ji-vI-qBd" kind="show" id="O0X-rG-0Qa"/>
+                                    <segue destination="5ji-vI-qBd" kind="show" identifier="UIViewController" id="O0X-rG-0Qa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -225,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cws-IV-dRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="377"/>
+            <point key="canvasLocation" x="766" y="413"/>
         </scene>
     </scenes>
     <resources>
