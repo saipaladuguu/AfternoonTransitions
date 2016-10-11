@@ -181,7 +181,7 @@
                                 </connections>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1684484_orig" translatesAutoresizingMaskIntoConstraints="NO" id="pEr-z2-NfT">
-                                <rect key="frame" x="90" y="52" width="384" height="205"/>
+                                <rect key="frame" x="108" y="113" width="384" height="205"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.71464839338897579" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
